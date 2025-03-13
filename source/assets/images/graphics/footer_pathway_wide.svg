@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1396.156" height="403" viewBox="0 0 1396.156 403">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_156803" data-name="Rectangle 156803" width="1396.156" height="403" transform="translate(-35 -34.885)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="footer_pathway_graphic" data-name="footer pathway graphic" transform="translate(35 34.885)" clip-path="url(#clip-path)">
+    <path id="Path_6335" data-name="Path 6335" d="M674,67.79H272.648M674,2H199.359M495.864,67.79H120.477a45.187,45.187,0,0,0-45.188,45.187V379M462.908,2H47.187A45.187,45.187,0,0,0,2,47.188L-.326,400.222" transform="translate(150.326 -3.887)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="10"/>
+    <path id="Path_6299" data-name="Path 6299" d="M1360.83,67.79H272.648M1360.83,2H199.359M495.864,67.79H120.477a45.187,45.187,0,0,0-45.188,45.187V379M462.908,2H47.187A45.187,45.187,0,0,0,2,47.188L-.326,400.222" transform="translate(0.326 -3.887)" fill="none" stroke="#78d64b" stroke-miterlimit="10" stroke-width="10"/>
+  </g>
+</svg>

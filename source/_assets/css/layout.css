@@ -1,0 +1,21 @@
+@layer base {
+  .container.skinny-container {
+    @apply 2xl:max-w-[828px] 2xl:px-0 xl:px-32 lg:px-28;
+  }
+
+  .breadcrumbs li {
+    @apply pr-4 mr-3 relative;
+  }
+
+  .breadcrumbs li {
+    @apply after:bg-chevron-right after:bg-center after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2 after:size-2 after:bg-no-repeat after:bg-cover last:after:hidden;
+  }
+
+  .breadcrumbs li a {
+    @apply text-black-light uppercase text-sm;
+  }
+
+  .breadcrumbs li a.active {
+    @apply text-black;
+  }
+}

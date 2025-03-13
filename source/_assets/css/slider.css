@@ -1,0 +1,69 @@
+.splide .splide__pagination {
+  @apply gap-1;
+
+  li button {
+    @apply h-1 w-14 bg-white opacity-60;
+  }
+
+  li button.is-active {
+    @apply bg-green-mid opacity-100;
+  }
+}
+
+.block--home-banner-carousel .splide {
+  @apply relative;
+
+  .splide__pagination {
+    @apply absolute bottom-40 left-1/2 -translate-x-1/2;
+  }
+}
+
+.splide.latest-insights .splide__track {
+
+  @apply block;
+
+  .splide__slide {
+    @apply transition-all duration-1000;
+  }
+
+  &.in-view .splide__slide {
+    &:nth-child(3n+2) {
+      @apply lg:translate-y-12 opacity-0;
+    }
+
+    &:nth-child(3n+3) {
+      @apply lg:translate-y-24 delay-500 opacity-0;
+    }
+
+  }
+
+  &.slider-viewed .splide__slide.is-visible {
+    @apply !translate-y-0 !opacity-100;
+  }
+
+  &.slider-unviewed .splide__slide{
+    &:nth-child(3n+2) {
+      @apply lg:translate-y-12 opacity-0;
+    }
+
+    &:nth-child(3n+3) {
+      @apply lg:translate-y-24 opacity-0;
+    }
+  }
+}
+
+.splide.latest-insights .splide__pagination li button {
+  @apply bg-grey-dark;
+
+  &.is-active {
+    @apply bg-green;
+  }
+}
+
+.testimonial-slider .splide__pagination {
+  @apply absolute left-1/2 -translate-x-1/2 bottom-20;
+
+  li button {
+    @apply !bg-white;
+  }
+}

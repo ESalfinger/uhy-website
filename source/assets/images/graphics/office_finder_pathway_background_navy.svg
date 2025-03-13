@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="850" height="496.114" viewBox="0 0 850 496.114">
+  <defs>
+    <style>
+      .background-of-navy {
+        fill: #002F6C;
+      }
+      
+      .stroke-of-navy {
+        stroke: #002F6C;
+      }
+    </style>
+  </defs>
+  <g transform="translate(5 5)" id="search_office_-_background" data-name="search office - background">
+    <rect width="73" height="496.114" fill="#672146" id="Rect_left_top" class="background-of-navy"/>
+    <rect width="1372.229" height="74" fill="#672146" id="Rect_top" class="background-of-navy"/>
+    <rect width="1372.229" height="146.114" fill="#672146" y="350" id="Rect_left_bottom" class="background-of-navy"/>
+    <rect width="1372.229" height="75" fill="#672146" y="280" id="Rect_left_middle" class="background-of-navy"/>
+    <rect width="1092.229" height="423.114" fill="#672146" x="280" y="73" id="Rect_life" class="background-of-navy"/>
+    <circle cx="10" cy="10" r="140" stroke-width="65" stroke="#672146" fill="none" transform="translate(165,165)" id="Ellipse_background" class="stroke-of-navy"/>
+  </g>
+  <g id="search_office_-_pathway_graphic" data-name="search office - pathway graphic" transform="translate(5 5)">
+    <line id="Line_257" data-name="Line 257" x2="1199.788" transform="translate(167.441 351.059)" fill="none" stroke="#8c288f" stroke-width="10"/>
+    <line id="Line_258" data-name="Line 258" x2="1191.031" transform="translate(176.197 283.215)" fill="none" stroke="#8c288f" stroke-width="10"/>
+    <line id="Line_259" data-name="Line 259" y2="322.223" transform="translate(282.744 168.891)" fill="none" stroke="#8c288f" stroke-width="10"/>
+    <line id="Line_260" data-name="Line 260" y2="324.5" transform="translate(350.59 165.46)" fill="none" stroke="#e53988" stroke-width="10"/>
+    <circle id="Ellipse_14" data-name="Ellipse 14" cx="175.532" cy="175.532" r="175.532" fill="none" stroke="#e53988" stroke-width="10"/>
+    <circle id="Ellipse_15" data-name="Ellipse 15" cx="107.503" cy="107.503" r="107.503" transform="translate(68.029 68.028)" fill="none" stroke="#8c288f" stroke-width="10"/>
+  </g>
+</svg>

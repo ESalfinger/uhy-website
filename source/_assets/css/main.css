@@ -1,0 +1,14 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@import 'font.css';
+@import 'slider.css';
+@import 'forms.css';
+@import 'layout.css';
+
+@layer base {
+  .video-circle {
+    clip-path: circle(50%);
+  }
+}

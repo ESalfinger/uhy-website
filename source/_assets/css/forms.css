@@ -1,0 +1,9 @@
+.homepage-office-search {
+  select {
+    @apply form-select rounded max-md:bg-aubergine-light bg-white md:bg-opacity-25 text-white bg-select-arrow-white border-none focus:ring-aubergine md:w-72 w-full;
+
+    option {
+      @apply rounded-none bg-aubergine-light hover:bg-aubergine;
+    }
+  }
+}
