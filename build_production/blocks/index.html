@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="canonical" href="/blocks">
+    <meta name="description" content="">
+    <title>UHY Prototype Kit</title>
+    <link rel="stylesheet" href="/assets/build/css/main.css?id=e0e089df45b325b11f86b7645edc0dad">
+    <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/intersect@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <style>
+      [x-cloak] { display: none; }
+    </style>
+    <link rel="stylesheet" href="https://use.typekit.net/nch1nsw.css">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js" integrity="sha256-FZsW7H2V5X9TGinSjjwYJ419Xka27I8XPDmWryGlWtw=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide-core.min.css" integrity="sha256-ZAXImCY06SjVuIrJfWUETkyCctX5aGdL1AVEBX5CxZA=" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-video@0.8.0/dist/js/splide-extension-video.min.js" integrity="sha256-SOsIHtfQvDlbWUkfsmrKeeclGbL2ehwxEATrrdtWNhY=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-video@0.8.0/dist/css/splide-extension-video.min.css" integrity="sha256-uJvNKReeecfthkBhNDLky4FXv742qoe4BgE9icJOePg=" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-intersection@0.2.0/dist/js/splide-extension-intersection.min.js" integrity="sha256-JKADUEtliYhbM/9Tqt7qaeQb7T2XmLEKqJ068n6tcq0=" crossorigin="anonymous"></script>
+  </head>
+  <body
+    class="antialiased"
+  >
+      <div class="py-8 mb-8">
+  <div class="container mx-auto px-4 flex flex-col lg:flex-row justify-center lg:justify-between items-center font-rcp">
+    <div class="w-64">
+      <img src="/assets/images/logos/UHY-logo-green.svg" alt="UHY logo" height="55" width="163">
+    </div>
+  </div>
+</div>
+
+<div class="container mx-auto px-4 mb-16">
+  <h2 class="text-2xl text-independence font-rcp mb-8 border-b border-tint pb-4">
+  Navigation
+</h2>
+  <div class="flex flex-wrap -mx-4">
+    <div class="w-full md:w-1/3 px-4">
+      <ul>
+        <li class="mb-2"><a href="/">Base styles</a></li>
+        <li class="mb-2"><a href="/structural">Structural</a></li>
+        <li class="mb-2"><a href="/gadget">Gadget</a></li>
+      </ul>
+    </div>
+    <div class="w-full md:w-1/3 px-4">
+      <ul>
+        <li class="mb-2"><a href="/aspects">Content aspects</a></li>
+        <li class="mb-2"><a href="/blocks">Blocks</a></li>
+        <li class="mb-2"><a href="/paragraphs">Paragraphs</a></li>
+      </ul>
+    </div>
+    <div class="w-full md:w-1/3 px-4">
+      <ul>
+        <li class="mb-2"><a href="/kitchen-sink">Kitchen sink</a></li>
+        <li class="mb-2"><a href="/home">Home page</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+  <div class="container mx-auto px-4">
+  <h2 class="text-2xl text-independence font-rcp mb-8 border-b border-tint pb-4">
+  Office Finder
+</h2>
+</div>
+<div class="container mx-auto px-4 mb-8">
+  <section class="homepage-office-search bg-aubergine relative overflow-hidden bg-aubergine">
+  <div class="container mx-auto relative z-10 skinny-container">
+    <div class="flex max-md:flex-col">
+      <div class="md:basis-1/2 xl:basis-[55%] py-28 xl:py-36">
+        <h2 class="text-white text-3xl mb-6 font-light">Search for your nearest office</h2>
+        <div class="prose-lg text-white mb-12">
+          <p>Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+        </div>
+        <a href="#" class="text-white uppercase text-sm flex justify-center items-center w-fit relative after:ease-out after:left-0 after:duration-300 after:absolute after:-bottom-1.5 after:h-0.5 after:w-0 hover:after:bg-white hover:after:w-full after:transition-all"><span>Search</span><img src="/assets/images/icons/arrow-right-white.svg" alt="" class="text-white ml-3" width="15" height="12"></a>
+      </div>
+    </div>
+  </div>
+  <div class="md:absolute bottom-0 max-md:left-40 md:right-0 xl:-right-40 w-full h-full -z-0 pointer-events-none md:-bottom-14 lg:-bottom-10 xl:-bottom-24 scale-80">
+    <div class="max-md:ml-10 max-md:h-[300px] relative w-full h-full">
+      <img src="/assets/images/graphics/office_finder_pathway_background_aubergine.svg" alt="" class="absolute max-w-none max-md:bottom-0 max-md:scale-125 max-md:left-0 md:bottom-10 md:-right-96 md:scale-125 lg:bottom-10 lg:-right-64 xl:bottom-20 xl:-right-20 w-[650px] xl:scale-150 md:z-10">
+      <video autoplay loop muted playsinline poster="/assets/images/misc/home/video-poster.jpg" class="video-circle absolute h-[250px] max-sm:max-w-none bottom-40 max-sm:-left-14 max-md:sm:-left-14 sm:h-[250px] sm:bottom-24 -z-10 md:-right-20 md:bottom-40 lg:right-6 lg:bottom-40 xl:bottom-56 xl:right-[278px] md:h-[250px]">
+        <source src="/assets/videos/background-video.webm" type="video/webm">
+        <source src="/assets/videos/background-video.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+</section>
+</div>
+
+  <div class="container mx-auto px-4">
+  <h2 class="text-2xl text-independence font-rcp mb-8 border-b border-tint pb-4">
+  Subscribe to news
+</h2>
+</div>
+<div class="container mx-auto px-4 mb-8">
+  <section class="bg-green-mid py-16 lg:bg-white-shield bg-no-repeat bg-subscribe-shield">
+  <div class="container mx-auto">
+    <div class="flex">
+      <div class="lg:basis-1/2 xl:basis-1/2">
+        <p class="text-white text-3xl lg:text-4xl font-semibold"><a href="#" class="underline">Subscribe</a> to all our latest news, direct to your inbox<img src="/assets/images/icons/arrow-right-white.svg" alt="" class="text-white ml-3 inline-block" width="15" height="12"></p>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+
+    <script defer src="/assets/build/js/main.js?id=395eb8038faf3f736ed6ae1eba25886a"></script>
+  </body>
+</html>

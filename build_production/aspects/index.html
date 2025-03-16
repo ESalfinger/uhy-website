@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="canonical" href="/aspects">
+    <meta name="description" content="">
+    <title>UHY Prototype Kit</title>
+    <link rel="stylesheet" href="/assets/build/css/main.css?id=e0e089df45b325b11f86b7645edc0dad">
+    <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/intersect@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <style>
+      [x-cloak] { display: none; }
+    </style>
+    <link rel="stylesheet" href="https://use.typekit.net/nch1nsw.css">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js" integrity="sha256-FZsW7H2V5X9TGinSjjwYJ419Xka27I8XPDmWryGlWtw=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide-core.min.css" integrity="sha256-ZAXImCY06SjVuIrJfWUETkyCctX5aGdL1AVEBX5CxZA=" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-video@0.8.0/dist/js/splide-extension-video.min.js" integrity="sha256-SOsIHtfQvDlbWUkfsmrKeeclGbL2ehwxEATrrdtWNhY=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-video@0.8.0/dist/css/splide-extension-video.min.css" integrity="sha256-uJvNKReeecfthkBhNDLky4FXv742qoe4BgE9icJOePg=" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-intersection@0.2.0/dist/js/splide-extension-intersection.min.js" integrity="sha256-JKADUEtliYhbM/9Tqt7qaeQb7T2XmLEKqJ068n6tcq0=" crossorigin="anonymous"></script>
+  </head>
+  <body
+    class="antialiased"
+  >
+      <div class="py-8 mb-8">
+  <div class="container mx-auto px-4 flex flex-col lg:flex-row justify-center lg:justify-between items-center font-rcp">
+    <div class="w-64">
+      <img src="/assets/images/logos/UHY-logo-green.svg" alt="UHY logo" height="55" width="163">
+    </div>
+  </div>
+</div>
+
+<div class="container mx-auto px-4 mb-16">
+  <h2 class="text-2xl text-independence font-rcp mb-8 border-b border-tint pb-4">
+  Navigation
+</h2>
+  <div class="flex flex-wrap -mx-4">
+    <div class="w-full md:w-1/3 px-4">
+      <ul>
+        <li class="mb-2"><a href="/">Base styles</a></li>
+        <li class="mb-2"><a href="/structural">Structural</a></li>
+        <li class="mb-2"><a href="/gadget">Gadget</a></li>
+      </ul>
+    </div>
+    <div class="w-full md:w-1/3 px-4">
+      <ul>
+        <li class="mb-2"><a href="/aspects">Content aspects</a></li>
+        <li class="mb-2"><a href="/blocks">Blocks</a></li>
+        <li class="mb-2"><a href="/paragraphs">Paragraphs</a></li>
+      </ul>
+    </div>
+    <div class="w-full md:w-1/3 px-4">
+      <ul>
+        <li class="mb-2"><a href="/kitchen-sink">Kitchen sink</a></li>
+        <li class="mb-2"><a href="/home">Home page</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+  <div class="container mx-auto px-4">
+  <h2 class="text-2xl text-independence font-rcp mb-8 border-b border-tint pb-4">
+  Insight [teaser]
+</h2>
+</div>
+<div class="container mx-auto px-4 mb-8">
+  <div class="grid md:grid-cols-3 sm:grid-cols-2">
+      <a href="#" class="teaser block group relative transition ease-out duration-300 overflow-hidden" :class="{'translate-y-0': intersected}">
+    <span class="absolute bg-green-mid text-white p-3 top-0 left-0 z-20">Article</span>
+    <img src="/assets/images/misc/home/banner-image-2.png" alt="" class="absolute top-0 left-0 w-full h-full object-cover scale-100 transition duration-300 ease-out group-hover:scale-105">
+    <article class="h-96 md:h-[480px] lg:h-[620px] xl:h-[578px] flex flex-col bg-black px-5 pb-6 transition-all ease-out duration-300 overflow-hidden">
+      <div class="overlay opacity-60 group-hover:opacity-100 absolute top-0 left-0 w-full h-full from-black to-black-faded bg-gradient-to-t z-10 pointer-events-none transition-all ease-out duration-300"></div>
+      <h3 class="text-xl text-white group-hover:underline mb-10 line-clamp-3 mt-auto relative z-20">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam...</h3>
+      <div class="text-white uppercase text-sm flex justify-center z-20 items-center w-fit relative after:ease-out after:left-0 after:duration-300 after:absolute after:-bottom-1.5 after:h-0.5 after:w-0 group-hover:after:bg-white group-hover:after:w-full after:transition-all"><span>Read more</span><img src="/assets/images/icons/arrow-right-white.svg" alt="" class="text-white ml-3 w-4 h-3" width="15" height="12"></div>
+    </article>
+</a>
+    </div>
+</div>
+
+  <div class="container mx-auto px-4">
+  <h2 class="text-2xl text-independence font-rcp mb-8 border-b border-tint pb-4">
+  Insight [featured]
+</h2>
+</div>
+<div class="container mx-auto px-4 mb-8">
+  <article class="flex max-lg:flex-wrap relative">
+  <span class="absolute bg-green-mid text-white py-2 px-3 top-0 left-0 z-20">Article</span>
+  <div class="max-lg:basis-full basis-1/3 max-lg:mb-10">
+    <img src="/assets/images/misc/insights/featured.png" alt="A man jumping into the air" class="w-full h-auto">
+  </div>
+  <div class="max-lg:basis-full basis-2/3">
+    <div class="lg:ml-20 xl:ml-24 2xl:ml-28">
+      <h3 class="text-green-dark text-2xl mb-8 lg:mb-12 2xl:max-w-[420px]">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</h3>
+      <p class="font-light text-black-light mb-8 lg:mb-12 2xl:max-w-[540px]">Ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
+      <a href="#" class="text-green-dark uppercase text-sm flex justify-center items-center w-fit relative after:ease-out after:left-0 after:duration-300 after:absolute after:-bottom-1.5 after:h-0.5 after:w-0 hover:after:bg-green-dark hover:after:w-full after:transition-all"><span>Find out more</span><img src="/assets/images/icons/arrow-right-green-dark.svg" alt="" class="text-black ml-3 w-4 h-3" width="15" height="12"></a>
+    </div>
+  </div>
+</article>
+</div>
+
+  <div class="container mx-auto px-4">
+  <h2 class="text-2xl text-independence font-rcp mb-8 border-b border-tint pb-4">
+  Case Study [large]
+</h2>
+</div>
+<div class="container mx-auto px-4 mb-8">
+  <section class="py-16">
+  <div class="container mx-auto">
+    <article class="bg-navy md:h-[480px] lg:h-[500px] 2xl:h-[600px] relative">
+      <div class="flex max-md:flex-col h-full relative z-10">
+        <div class="md:basis-1/2 bg-cover h-full bg-center max-md:h-48" style="background-image: url('/assets/images/misc/audit-assurance/case_study_image.jpg')">
+        </div>
+        <div class="md:basis-1/2 flex flex-col justify-center md:ml-8 lg:ml-20 pr-8 max-md:p-8 md:max-lg:py-20">
+          <h3 class="text-white text-3xl font-thin mb-5">Case Study: Transfinder</h3>
+          <p class="text-lg text-white mb-5">Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+          <a href="#" class="text-white uppercase text-sm flex justify-center items-center w-fit relative after:ease-out after:left-0 after:duration-300 after:absolute after:-bottom-1.5 after:h-0.5 after:w-0 hover:after:bg-white hover:after:w-full after:transition-all"><span>Discover more</span><img src="/assets/images/icons/arrow-right-white.svg" alt="" class="text-white ml-3" width="15" height="12"></a>
+        </div>
+      </div>
+      <div class="absolute bottom-0 right-0">
+        <img src="/assets/images/graphics/case_study_lines.svg" alt="" width="700" class="w-72 md:w-56 lg:w-80 2xl:w-96">
+      </div>
+    </article>
+  </div>
+</section>
+</div>
+  <div class="container mx-auto px-4">
+  <h2 class="text-2xl text-independence font-rcp mb-8 border-b border-tint pb-4">
+  Profile teaser
+</h2>
+</div>
+<div class="container mx-auto px-4 mb-8">
+  <article class="flex gap-11">
+  <img src="/assets/images/misc/locations/profile.jpg" alt="A headshot of Malcom Winston" class="size-[90px]">
+  <div>
+    <h4 class="text-black-light font-bold text-base">Contact Partner</h4>
+    <p class="text-black-light font-light">Malcom Winston</p>
+    <table role="list">
+      <tr>
+        <td><span class="text-green-mid">T.&nbsp;</span></td>
+        <td><a href="tel:+441212994799" class="text-black-light font-light">+44 121 299 4799</a></td>
+      </tr>
+      <tr>
+        <td><span class="text-green-mid">E.&nbsp;</span></td>
+        <td><a href="mailto:m.winston@uhy-uk.com" class="text-black-light font-light">m.winston@uhy-uk.com</a></td>
+      </tr>
+    </table>
+  </div>
+</article>
+</div>
+
+  <div class="container mx-auto px-4">
+  <h2 class="text-2xl text-independence font-rcp mb-8 border-b border-tint pb-4">
+  Page header
+</h2>
+</div>
+<div class="container mx-auto px-4 mb-8">
+  <header class="bg-navy pb-6 pt-10 md:pt-44 relative overflow-hidden">
+  <div class="container mx-auto relative z-10">
+    <div class="animate-banner-load">
+      <p class="subtitle text-white font-bold text-3xl mb-2 opacity-60">What we do</p>
+      <h1 class="text-white font-light text-3xl">Audit &amp; Assurance</h1>
+    </div>
+  </div>
+  <div class="absolute right-0 bottom-0 2xl:-bottom-12 w-[492px] 2xl:w-[603px] 4xl:w-[702px] h-full flex items-end md:max-lg:translate-x-1/4 max-sm:translate-x-56 max-sm:scale-50 max-sm:translate-y-7 sm:max-md:translate-x-1/2 sm:max-md:translate-y-10">
+    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 498.2 172.8" class="mt-auto overflow-visible">
+      <g id="Pathway_lines_header" data-name="Pathway lines header">
+        <g id="lines_2" data-name="lines 2" class="animate-banner-load-pathway-pink">
+          <path class="cls-2" d="M75.9,172.8h-10v-68c0-12.2,4.7-23.6,13.4-32.3,8.6-8.6,20.1-13.4,32.3-13.4h386.7v10H111.5c-9.5,0-18.5,3.7-25.2,10.4-6.7,6.7-10.4,15.7-10.4,25.2v68Z" fill="#e53988" stroke-width="0"/>
+          <path class="cls-2" d="M10,172.8H0V45.6C0,20.5,20.5,0,45.6,0h452.6v10H45.6c-19.6,0-35.6,16-35.6,35.6v127.2Z" fill="#e53988" stroke-width="0"/>
+        </g>
+        <g id="lines_1" data-name="lines 1" class="animate-banner-load-pathway-purple">
+          <path class="cls-1" d="M252.6,172.8h-10v-94.6c0-13.4,5.2-26,14.7-35.5,9.5-9.5,22.1-14.7,35.5-14.7h205.5v10h-205.5c-22.1,0-40.1,18-40.1,40.1v94.6Z" fill="#8c288f" stroke-width="0"/>
+          <path class="cls-1" d="M179.4,172.8h-10V44.7c0-24.6,22.5-44.7,50.1-44.7h278.7v10H219.5c-22.1,0-40.1,15.6-40.1,34.7v128.1Z" fill="#8c288f" stroke-width="0"/>
+        </g>
+      </g>
+    </svg>
+  </div>
+</header>
+</div>
+
+    <script defer src="/assets/build/js/main.js?id=395eb8038faf3f736ed6ae1eba25886a"></script>
+  </body>
+</html>

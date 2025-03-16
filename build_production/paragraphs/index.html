@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="canonical" href="/paragraphs">
+    <meta name="description" content="">
+    <title>UHY Prototype Kit</title>
+    <link rel="stylesheet" href="/assets/build/css/main.css?id=e0e089df45b325b11f86b7645edc0dad">
+    <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/intersect@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <style>
+      [x-cloak] { display: none; }
+    </style>
+    <link rel="stylesheet" href="https://use.typekit.net/nch1nsw.css">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js" integrity="sha256-FZsW7H2V5X9TGinSjjwYJ419Xka27I8XPDmWryGlWtw=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide-core.min.css" integrity="sha256-ZAXImCY06SjVuIrJfWUETkyCctX5aGdL1AVEBX5CxZA=" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-video@0.8.0/dist/js/splide-extension-video.min.js" integrity="sha256-SOsIHtfQvDlbWUkfsmrKeeclGbL2ehwxEATrrdtWNhY=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-video@0.8.0/dist/css/splide-extension-video.min.css" integrity="sha256-uJvNKReeecfthkBhNDLky4FXv742qoe4BgE9icJOePg=" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-intersection@0.2.0/dist/js/splide-extension-intersection.min.js" integrity="sha256-JKADUEtliYhbM/9Tqt7qaeQb7T2XmLEKqJ068n6tcq0=" crossorigin="anonymous"></script>
+  </head>
+  <body
+    class="antialiased"
+  >
+      <div class="py-8 mb-8">
+  <div class="container mx-auto px-4 flex flex-col lg:flex-row justify-center lg:justify-between items-center font-rcp">
+    <div class="w-64">
+      <img src="/assets/images/logos/UHY-logo-green.svg" alt="UHY logo" height="55" width="163">
+    </div>
+  </div>
+</div>
+
+<div class="container mx-auto px-4 mb-16">
+  <h2 class="text-2xl text-independence font-rcp mb-8 border-b border-tint pb-4">
+  Navigation
+</h2>
+  <div class="flex flex-wrap -mx-4">
+    <div class="w-full md:w-1/3 px-4">
+      <ul>
+        <li class="mb-2"><a href="/">Base styles</a></li>
+        <li class="mb-2"><a href="/structural">Structural</a></li>
+        <li class="mb-2"><a href="/gadget">Gadget</a></li>
+      </ul>
+    </div>
+    <div class="w-full md:w-1/3 px-4">
+      <ul>
+        <li class="mb-2"><a href="/aspects">Content aspects</a></li>
+        <li class="mb-2"><a href="/blocks">Blocks</a></li>
+        <li class="mb-2"><a href="/paragraphs">Paragraphs</a></li>
+      </ul>
+    </div>
+    <div class="w-full md:w-1/3 px-4">
+      <ul>
+        <li class="mb-2"><a href="/kitchen-sink">Kitchen sink</a></li>
+        <li class="mb-2"><a href="/home">Home page</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+  <div class="container mx-auto px-4">
+  <h2 class="text-2xl text-independence font-rcp mb-8 border-b border-tint pb-4">
+  Text
+</h2>
+</div>
+<div class="container mx-auto px-4 mb-8">
+  <div class="container mx-auto my-7 skinny-container">
+  <div class="prose max-w-none">
+    <h2>Totam rem aperiam</h2>
+      <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+  </div>
+</div>
+</div>
+
+  <div class="container mx-auto px-4">
+  <h2 class="text-2xl text-independence font-rcp mb-8 border-b border-tint pb-4">
+  Accordion
+</h2>
+</div>
+<div class="container mx-auto px-4 mb-8">
+  <div class="container mx-auto skinny-container">
+    <h2 class="text-2xl font-light text-green-dark mb-5">Nemo enim ipsam voluptatem</h2>
+    <div class="border-t border-t-black-light border-opacity-30">
+    <div x-data="{'open': false}" class="flex py-4 border-b border-black-light border-opacity-30">
+  <div class="ml-6">
+    <p @click="open = !open" class="font-semibold text-lg text-black-light select-none relative before:absolute before:top-1/2 before:-left-12 before:-translate-y-1/2 before:size-5 before:bg-chevron-down before:ml-5 before:transition-transform cursor-pointer" :class="{'before:rotate-180':open}">Totam rem aperiam</p>
+    <div x-show="open" class="prose mt-5 max-w-none" x-cloak x-transition>
+      <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>
+        <ul>
+          <li>Dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</li>
+          <li>Invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua</li>
+          <li>At vero eos et accusam et justo duo dolores et ea rebum</li>
+          <li>Stet clita kasd gubergren, no sea takimata sanctus est</li>
+        </ul>
+    </div>
+  </div>
+</div>
+      <div x-data="{'open': false}" class="flex py-4 border-b border-black-light border-opacity-30">
+  <div class="ml-6">
+    <p @click="open = !open" class="font-semibold text-lg text-black-light select-none relative before:absolute before:top-1/2 before:-left-12 before:-translate-y-1/2 before:size-5 before:bg-chevron-down before:ml-5 before:transition-transform cursor-pointer" :class="{'before:rotate-180':open}">At vero eos et accusam</p>
+    <div x-show="open" class="prose mt-5 max-w-none" x-cloak x-transition>
+      <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>
+        <ul>
+          <li>Dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</li>
+          <li>Invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua</li>
+          <li>At vero eos et accusam et justo duo dolores et ea rebum</li>
+          <li>Stet clita kasd gubergren, no sea takimata sanctus est</li>
+        </ul>
+    </div>
+  </div>
+</div>
+      <div x-data="{'open': false}" class="flex py-4 border-b border-black-light border-opacity-30">
+  <div class="ml-6">
+    <p @click="open = !open" class="font-semibold text-lg text-black-light select-none relative before:absolute before:top-1/2 before:-left-12 before:-translate-y-1/2 before:size-5 before:bg-chevron-down before:ml-5 before:transition-transform cursor-pointer" :class="{'before:rotate-180':open}">Aliquyam erat sed diam voluptua</p>
+    <div x-show="open" class="prose mt-5 max-w-none" x-cloak x-transition>
+      <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>
+        <ul>
+          <li>Dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</li>
+          <li>Invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua</li>
+          <li>At vero eos et accusam et justo duo dolores et ea rebum</li>
+          <li>Stet clita kasd gubergren, no sea takimata sanctus est</li>
+        </ul>
+    </div>
+  </div>
+</div>
+      <div x-data="{'open': false}" class="flex py-4 border-b border-black-light border-opacity-30">
+  <div class="ml-6">
+    <p @click="open = !open" class="font-semibold text-lg text-black-light select-none relative before:absolute before:top-1/2 before:-left-12 before:-translate-y-1/2 before:size-5 before:bg-chevron-down before:ml-5 before:transition-transform cursor-pointer" :class="{'before:rotate-180':open}">Duo dolores et ea rebum</p>
+    <div x-show="open" class="prose mt-5 max-w-none" x-cloak x-transition>
+      <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>
+        <ul>
+          <li>Dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</li>
+          <li>Invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua</li>
+          <li>At vero eos et accusam et justo duo dolores et ea rebum</li>
+          <li>Stet clita kasd gubergren, no sea takimata sanctus est</li>
+        </ul>
+    </div>
+  </div>
+</div>
+      <div x-data="{'open': false}" class="flex py-4 border-b border-black-light border-opacity-30">
+  <div class="ml-6">
+    <p @click="open = !open" class="font-semibold text-lg text-black-light select-none relative before:absolute before:top-1/2 before:-left-12 before:-translate-y-1/2 before:size-5 before:bg-chevron-down before:ml-5 before:transition-transform cursor-pointer" :class="{'before:rotate-180':open}">Duo dolores et ea rebum</p>
+    <div x-show="open" class="prose mt-5 max-w-none" x-cloak x-transition>
+      <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>
+        <ul>
+          <li>Dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</li>
+          <li>Invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua</li>
+          <li>At vero eos et accusam et justo duo dolores et ea rebum</li>
+          <li>Stet clita kasd gubergren, no sea takimata sanctus est</li>
+        </ul>
+    </div>
+  </div>
+</div>
+  </div>
+</div>
+</div>
+
+  <div class="container mx-auto px-4">
+  <h2 class="text-2xl text-independence font-rcp mb-8 border-b border-tint pb-4">
+  Blockquote
+</h2>
+</div>
+<div class="container mx-auto px-4 mb-8">
+  <section class="container mx-auto">
+  <blockquote class="bg-green-dark py-10 pb-14 xl:py-24 bg-testimonial-pathway bg-left-bottom bg-no-repeat max-xl:bg-[length:202px_auto]">
+    <div class="container skinny-container mx-auto">
+      <main class="mb-5 max-md:px-5">
+        <span class="block text-green-light text-6xl mb-0 max-w-[616px] mx-auto" aria-hidden="true">&ldquo;</span>
+        <div class="prose-lg md:prose-2xl max-w-[616px] mx-auto text-center text-white">
+          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet</p>
+        </div>
+        <span class="block text-green-light text-6xl text-right max-w-[616px] mx-auto mt-5" aria-hidden="true">&rdquo;</span>
+      </main>
+      <footer>
+        <cite class="text-white text-lg not-italic text-center block">Bob Brown - UHY Member Firm</cite>
+      </footer>
+    </div>
+  </blockquote>
+</section>
+</div>
+
+  <div class="container mx-auto px-4">
+  <h2 class="text-2xl text-independence font-rcp mb-8 border-b border-tint pb-4">
+  Testimonials
+</h2>
+</div>
+<div class="container mx-auto px-4 mb-8">
+  <section class="splide testimonial-slider py-10 container mx-auto relative" aria-labelledby="carousel-heading">
+  <h2 id="carousel-heading" class="left-1/2 -translate-x-1/2 top-20 absolute lg:top-20 xl:top-28 2xl:top-44 text-white z-20 text-3xl text-center">What people say about us</h2>
+  <div class="splide__track">
+    <ul class="splide__list">
+      <li class="splide__slide bg-fixed bg-cover bg-no-repeat"
+  style="background-image: url('/assets/images/misc/audit-assurance/parallax_image.jpg')"
+>
+  <!-- Using a blockquote element to be semantically correct -->
+  <blockquote  class="pt-36 xl:pt-40 2xl:pt-64 pb-10">
+          <div class="container skinny-container mx-auto max-2xl:px-10">
+        <div
+        class="max-w-none text-center prose-lg">
+          <p class="text-white">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor</p>
+        </div>
+                  <!-- Adding the source of the quote as a citation -->
+          <footer class="mt-14 mb-10 xl:mb-12 2xl:mb-24">
+            <cite class="text-white text-lg not-italic text-center block">Bob Brown - UHY Member Firm</cite>
+          </footer>
+              </div>
+      </blockquote>
+</li>
+      <li class="splide__slide bg-fixed bg-cover bg-no-repeat"
+  style="background-image: url('/assets/images/misc/audit-assurance/parallax_image.jpg')"
+>
+  <!-- Using a blockquote element to be semantically correct -->
+  <blockquote  class="pt-36 xl:pt-40 2xl:pt-64 pb-10">
+          <div class="container skinny-container mx-auto max-2xl:px-10">
+        <div
+        class="max-w-none text-center prose-lg">
+          <p class="text-white">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor</p>
+        </div>
+                  <!-- Adding the source of the quote as a citation -->
+          <footer class="mt-14 mb-10 xl:mb-12 2xl:mb-24">
+            <cite class="text-white text-lg not-italic text-center block">Bob Brown - UHY Member Firm</cite>
+          </footer>
+              </div>
+      </blockquote>
+</li>
+      <li class="splide__slide bg-fixed bg-cover bg-no-repeat"
+  style="background-image: url('/assets/images/misc/audit-assurance/parallax_image.jpg')"
+>
+  <!-- Using a blockquote element to be semantically correct -->
+  <blockquote  class="pt-36 xl:pt-40 2xl:pt-64 pb-10">
+          <div class="container skinny-container mx-auto max-2xl:px-10">
+        <div
+        class="max-w-none text-center prose-lg">
+          <p class="text-white">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor</p>
+        </div>
+                  <!-- Adding the source of the quote as a citation -->
+          <footer class="mt-14 mb-10 xl:mb-12 2xl:mb-24">
+            <cite class="text-white text-lg not-italic text-center block">Bob Brown - UHY Member Firm</cite>
+          </footer>
+              </div>
+      </blockquote>
+</li>
+    </ul>
+  </div>
+</section>
+</div>
+
+  <div class="container mx-auto px-4">
+  <h2 class="text-2xl text-independence font-rcp mb-8 border-b border-tint pb-4">
+  CTA [left]
+</h2>
+</div>
+<div class="container mx-auto px-4 mb-8">
+  <section class="text-left">
+  <a href="#" class="rounded inline-flex border-none bg-green-mid text-white px-5 py-3 uppercase items-center hover:bg-green-dark transition ease-out duration-300">Left aligned CTA<img src="/assets/images/icons/arrow-right-white.svg" alt="" class="text-black ml-3 w-4 h-3" width="15" height="12"></a>
+</section>
+</div>
+  <div class="container mx-auto px-4">
+  <h2 class="text-2xl text-independence font-rcp mb-8 border-b border-tint pb-4">
+  CTA [center]
+</h2>
+</div>
+<div class="container mx-auto px-4 mb-8">
+  <section class="text-center">
+  <a href="#" class="rounded inline-flex border-none bg-green-mid text-white px-5 py-3 uppercase items-center hover:bg-green-dark transition ease-out duration-300">Center aligned CTA<img src="/assets/images/icons/arrow-right-white.svg" alt="" class="text-black ml-3 w-4 h-3" width="15" height="12"></a>
+</section>
+</div>
+  <div class="container mx-auto px-4">
+  <h2 class="text-2xl text-independence font-rcp mb-8 border-b border-tint pb-4">
+  CTA [center]
+</h2>
+</div>
+<div class="container mx-auto px-4 mb-8">
+  <section class="text-right">
+  <a href="#" class="rounded inline-flex border-none bg-green-mid text-white px-5 py-3 uppercase items-center hover:bg-green-dark transition ease-out duration-300">Right aligned CTA<img src="/assets/images/icons/arrow-right-white.svg" alt="" class="text-black ml-3 w-4 h-3" width="15" height="12"></a>
+</section>
+</div>
+
+    <script defer src="/assets/build/js/main.js?id=395eb8038faf3f736ed6ae1eba25886a"></script>
+  </body>
+</html>

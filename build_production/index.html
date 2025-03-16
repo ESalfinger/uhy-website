@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="canonical" href="/">
+    <meta name="description" content="">
+    <title>UHY Prototype Kit</title>
+    <link rel="stylesheet" href="/assets/build/css/main.css?id=e0e089df45b325b11f86b7645edc0dad">
+    <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/intersect@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <style>
+      [x-cloak] { display: none; }
+    </style>
+    <link rel="stylesheet" href="https://use.typekit.net/nch1nsw.css">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js" integrity="sha256-FZsW7H2V5X9TGinSjjwYJ419Xka27I8XPDmWryGlWtw=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide-core.min.css" integrity="sha256-ZAXImCY06SjVuIrJfWUETkyCctX5aGdL1AVEBX5CxZA=" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-video@0.8.0/dist/js/splide-extension-video.min.js" integrity="sha256-SOsIHtfQvDlbWUkfsmrKeeclGbL2ehwxEATrrdtWNhY=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-video@0.8.0/dist/css/splide-extension-video.min.css" integrity="sha256-uJvNKReeecfthkBhNDLky4FXv742qoe4BgE9icJOePg=" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-intersection@0.2.0/dist/js/splide-extension-intersection.min.js" integrity="sha256-JKADUEtliYhbM/9Tqt7qaeQb7T2XmLEKqJ068n6tcq0=" crossorigin="anonymous"></script>
+  </head>
+  <body
+    class="antialiased"
+  >
+      <div class="py-8 mb-8">
+  <div class="container mx-auto px-4 flex flex-col lg:flex-row justify-center lg:justify-between items-center font-rcp">
+    <div class="w-64">
+      <img src="/assets/images/logos/UHY-logo-green.svg" alt="UHY logo" height="55" width="163">
+    </div>
+  </div>
+</div>
+
+<div class="container mx-auto px-4 mb-16">
+  <h2 class="text-2xl text-independence font-rcp mb-8 border-b border-tint pb-4">
+  Navigation
+</h2>
+  <div class="flex flex-wrap -mx-4">
+    <div class="w-full md:w-1/3 px-4">
+      <ul>
+        <li class="mb-2"><a href="/">Base styles</a></li>
+        <li class="mb-2"><a href="/structural">Structural</a></li>
+        <li class="mb-2"><a href="/gadget">Gadget</a></li>
+      </ul>
+    </div>
+    <div class="w-full md:w-1/3 px-4">
+      <ul>
+        <li class="mb-2"><a href="/aspects">Content aspects</a></li>
+        <li class="mb-2"><a href="/blocks">Blocks</a></li>
+        <li class="mb-2"><a href="/paragraphs">Paragraphs</a></li>
+      </ul>
+    </div>
+    <div class="w-full md:w-1/3 px-4">
+      <ul>
+        <li class="mb-2"><a href="/kitchen-sink">Kitchen sink</a></li>
+        <li class="mb-2"><a href="/home">Home page</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+  <div class="container mx-auto px-4">
+  <h2 class="text-2xl text-independence font-rcp mb-8 border-b border-tint pb-4">
+  Colours
+</h2>
+</div>
+<div class="container mx-auto px-4 mb-8">
+  <div class="-mx-4 flex flex-wrap ">
+    <div class="px-4 w-1/2 lg:w-1/6 mb-8 flex flex-col items-center text-center">
+  <div class="rounded-full w-20 h-20 bg-black shadow mb-6"></div>
+  Black
+</div>
+    <div class="px-4 w-1/2 lg:w-1/6 mb-8 flex flex-col items-center text-center">
+  <div class="rounded-full w-20 h-20 bg-white shadow mb-6"></div>
+  White
+</div>
+    <div class="px-4 w-1/2 lg:w-1/6 mb-8 flex flex-col items-center text-center">
+  <div class="rounded-full w-20 h-20 bg-green-mid shadow mb-6"></div>
+  Green-mid
+</div>
+    <div class="px-4 w-1/2 lg:w-1/6 mb-8 flex flex-col items-center text-center">
+  <div class="rounded-full w-20 h-20 bg-green-dark shadow mb-6"></div>
+  Green-dark
+</div>
+    <div class="px-4 w-1/2 lg:w-1/6 mb-8 flex flex-col items-center text-center">
+  <div class="rounded-full w-20 h-20 bg-green-light shadow mb-6"></div>
+  Green-light
+</div>
+    <div class="px-4 w-1/2 lg:w-1/6 mb-8 flex flex-col items-center text-center">
+  <div class="rounded-full w-20 h-20 bg-green-forest shadow mb-6"></div>
+  Green-forest
+</div>
+    <div class="px-4 w-1/2 lg:w-1/6 mb-8 flex flex-col items-center text-center">
+  <div class="rounded-full w-20 h-20 bg-aubergine shadow mb-6"></div>
+  Aubergine
+</div>
+    <div class="px-4 w-1/2 lg:w-1/6 mb-8 flex flex-col items-center text-center">
+  <div class="rounded-full w-20 h-20 bg-aubergine-light shadow mb-6"></div>
+  Aubergine-light
+</div>
+    <div class="px-4 w-1/2 lg:w-1/6 mb-8 flex flex-col items-center text-center">
+  <div class="rounded-full w-20 h-20 bg-turquoise shadow mb-6"></div>
+  Turquoise
+</div>
+    <div class="px-4 w-1/2 lg:w-1/6 mb-8 flex flex-col items-center text-center">
+  <div class="rounded-full w-20 h-20 bg-french-grey shadow mb-6"></div>
+  French-grey
+</div>
+    <div class="px-4 w-1/2 lg:w-1/6 mb-8 flex flex-col items-center text-center">
+  <div class="rounded-full w-20 h-20 bg-orange shadow mb-6"></div>
+  Orange
+</div>
+    <div class="px-4 w-1/2 lg:w-1/6 mb-8 flex flex-col items-center text-center">
+  <div class="rounded-full w-20 h-20 bg-pink shadow mb-6"></div>
+  Pink
+</div>
+    <div class="px-4 w-1/2 lg:w-1/6 mb-8 flex flex-col items-center text-center">
+  <div class="rounded-full w-20 h-20 bg-purple shadow mb-6"></div>
+  Purple
+</div>
+    <div class="px-4 w-1/2 lg:w-1/6 mb-8 flex flex-col items-center text-center">
+  <div class="rounded-full w-20 h-20 bg-yellow shadow mb-6"></div>
+  Yellow
+</div>
+    <div class="px-4 w-1/2 lg:w-1/6 mb-8 flex flex-col items-center text-center">
+  <div class="rounded-full w-20 h-20 bg-navy shadow mb-6"></div>
+  Navy
+</div>
+    <div class="px-4 w-1/2 lg:w-1/6 mb-8 flex flex-col items-center text-center">
+  <div class="rounded-full w-20 h-20 bg-navy-mid shadow mb-6"></div>
+  Navy-mid
+</div>
+  </div>
+</div>
+  <div class="container mx-auto px-4">
+  <h2 class="text-2xl text-independence font-rcp mb-8 border-b border-tint pb-4">
+  Typography
+</h2>
+</div>
+<div class="container mx-auto px-4 mb-8">
+  <div class="prose">
+    <h1>This is an h1</h1>
+    <p class="leader">This is some leader text.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vitae tortor at turpis tristique consequat a et est. Duis iaculis imperdiet nisi vitae malesuada. Aenean pellentesque orci sit amet nibh eleifend rhoncus. Mauris scelerisque interdum est, id faucibus lectus blandit id. In sagittis risus a ipsum facilisis viverra. Etiam consequat ultrices est id interdum. Curabitur pretium volutpat porta. Etiam sed leo magna. In scelerisque posuere risus a ultrices. Integer nec elit tortor, quis pharetra justo.</p>
+    <h2>This is an h2</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vitae tortor at turpis tristique consequat a et est. Duis iaculis imperdiet nisi vitae malesuada. Aenean pellentesque orci sit amet nibh eleifend rhoncus. Mauris scelerisque interdum est, id faucibus lectus blandit id. In sagittis risus a ipsum facilisis viverra. Etiam consequat ultrices est id interdum. Curabitur pretium volutpat porta. Etiam sed leo magna. In scelerisque posuere risus a ultrices. Integer nec elit tortor, quis pharetra justo.</p>
+    <h3>This is an h3</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vitae tortor at turpis tristique consequat a et est. Duis iaculis imperdiet nisi vitae malesuada. Aenean pellentesque orci sit amet nibh eleifend rhoncus. Mauris scelerisque interdum est, id faucibus lectus blandit id. In sagittis risus a ipsum facilisis viverra. Etiam consequat ultrices est id interdum. Curabitur pretium volutpat porta. Etiam sed leo magna. In scelerisque posuere risus a ultrices. Integer nec elit tortor, quis pharetra justo.</p>
+    <ul>
+      <li>This is a list of items</li>
+      <li>This list has many items</li>
+      <li>A list should always have many items</li>
+    </ul>
+    <ol>
+      <li>This is a list of items</li>
+      <li>This list has many items</li>
+      <li>A list should always have many items</li>
+    </ol>
+    <table><thead><tr><th>Wrestler</th><th>Origin</th><th>Finisher</th></tr></thead><tbody><tr><td>Bret "The Hitman" Hart</td><td>Calgary, AB</td><td>Sharpshooter</td></tr><tr><td>Stone Cold Steve Austin</td><td>Austin, TX</td><td>Stone Cold Stunner</td></tr><tr><td>Randy Savage</td><td>Sarasota, FL</td><td>Elbow Drop</td></tr><tr><td>Vader</td><td>Boulder, CO</td><td>Vader Bomb</td></tr><tr><td>Razor Ramon</td><td>Chuluota, FL</td><td>Razor's Edge</td></tr></tbody></table>
+    <blockquote>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vitae tortor at turpis tristique consequat a et est. Duis iaculis imperdiet nisi vitae malesuada. Aenean pellentesque orci sit amet nibh eleifend rhoncus. Mauris scelerisque interdum est, id faucibus lectus blandit id. In sagittis risus a ipsum facilisis viverra. Etiam consequat ultrices est id interdum. Curabitur pretium volutpat porta. Etiam sed leo magna. In scelerisque posuere risus a ultrices. Integer nec elit tortor, quis pharetra justo.
+    </blockquote>
+  </div>
+</div>
+  <div class="container mx-auto px-4">
+  <h2 class="text-2xl text-independence font-rcp mb-8 border-b border-tint pb-4">
+  Forms
+</h2>
+</div>
+<div class="container mx-auto px-4 mb-8">
+  <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
+    <div class="grid grid-cols-1 gap-6">
+      <label class="block">
+        <span class="text-gray-700">Input (text)</span>
+        <input type="text" class="mt-1 block w-full" placeholder="john@example.com">
+      </label>
+      <label class="block">
+        <span class="text-gray-700">Input (email)</span>
+        <input type="email" class="mt-1 block w-full" placeholder="john@example.com">
+      </label>
+      <label class="block">
+        <span class="text-gray-700">Input (email, multiple)</span>
+        <input type="email" multiple="" class="mt-1 block w-full" placeholder="john@example.com">
+      </label>
+      <label class="block">
+        <span class="text-gray-700">Input (password)</span>
+        <input type="password" class="mt-1 block w-full" placeholder="john@example.com">
+      </label>
+      <label class="block">
+        <span class="text-gray-700">Input (date)</span>
+        <input type="date" class="mt-1 block w-full">
+      </label>
+      <label class="block">
+        <span class="text-gray-700">Input (datetime-local)</span>
+        <input type="datetime-local" class="mt-1 block w-full">
+      </label>
+      <label class="block">
+        <span class="text-gray-700">Input (month)</span>
+        <input type="month" class="mt-1 block w-full">
+      </label>
+      <label class="block">
+        <span class="text-gray-700">Input (number)</span>
+        <input type="number" class="mt-1 block w-full">
+      </label>
+      <label class="block">
+        <span class="text-gray-700">Input (search)</span>
+        <input type="search" class="mt-1 block w-full">
+      </label>
+      <label class="block">
+        <span class="text-gray-700">Input (time)</span>
+        <input type="time" class="mt-1 block w-full">
+      </label>
+      <label class="block">
+        <span class="text-gray-700">Input (week)</span>
+        <input type="week" class="mt-1 block w-full">
+      </label>
+    </div>
+    <div class="grid grid-cols-1 gap-6">
+      <label class="block">
+        <span class="text-gray-700">Input (tel)</span>
+        <input type="tel" multiple="" class="mt-1 block w-full" placeholder="john@example.com">
+      </label>
+      <label class="block">
+        <span class="text-gray-700">Input (url)</span>
+        <input type="url" multiple="" class="mt-1 block w-full" placeholder="john@example.com">
+      </label>
+      <label class="block">
+        <span class="text-gray-700">Select</span>
+        <select class="block w-full mt-1">
+          <option>Option 1</option>
+          <option>Option 2</option>
+        </select>
+      </label>
+      <label class="block">
+        <span class="text-gray-700">Select (multiple)</span>
+        <select class="block w-full mt-1" multiple="">
+          <option>Option 1</option>
+          <option>Option 2</option>
+          <option>Option 3</option>
+          <option>Option 4</option>
+          <option>Option 5</option>
+        </select>
+      </label>
+      <label class="block">
+        <span class="text-gray-700">Textarea</span>
+        <textarea class="mt-1 block w-full h-24" rows="3" placeholder="Enter some long form content."></textarea>
+      </label>
+      <div class="block">
+        <span class="text-gray-700">Checkboxes</span>
+        <div class="mt-2">
+          <div>
+            <label class="inline-flex items-center">
+              <input type="checkbox" checked="">
+              <span class="ml-2">Option 1</span>
+            </label>
+          </div>
+          <div>
+            <label class="inline-flex items-center">
+              <input type="checkbox">
+              <span class="ml-2">Option 2</span>
+            </label>
+          </div>
+          <div>
+            <label class="inline-flex items-center">
+              <input type="checkbox">
+              <span class="ml-2">Option 3</span>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="block">
+        <span class="text-gray-700">Radio Buttons</span>
+        <div class="mt-2">
+          <div>
+            <label class="inline-flex items-center">
+              <input type="radio" checked="" name="radio-direct" value="1">
+              <span class="ml-2">Option 1</span>
+            </label>
+          </div>
+          <div>
+            <label class="inline-flex items-center">
+              <input type="radio" name="radio-direct" value="2">
+              <span class="ml-2">Option 2</span>
+            </label>
+          </div>
+          <div>
+            <label class="inline-flex items-center">
+              <input type="radio" name="radio-direct" value="3">
+              <span class="ml-2">Option 3</span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <script defer src="/assets/build/js/main.js?id=395eb8038faf3f736ed6ae1eba25886a"></script>
+  </body>
+</html>

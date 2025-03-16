@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="canonical" href="/gadget">
+    <meta name="description" content="">
+    <title>UHY Prototype Kit</title>
+    <link rel="stylesheet" href="/assets/build/css/main.css?id=e0e089df45b325b11f86b7645edc0dad">
+    <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/intersect@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <style>
+      [x-cloak] { display: none; }
+    </style>
+    <link rel="stylesheet" href="https://use.typekit.net/nch1nsw.css">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js" integrity="sha256-FZsW7H2V5X9TGinSjjwYJ419Xka27I8XPDmWryGlWtw=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide-core.min.css" integrity="sha256-ZAXImCY06SjVuIrJfWUETkyCctX5aGdL1AVEBX5CxZA=" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-video@0.8.0/dist/js/splide-extension-video.min.js" integrity="sha256-SOsIHtfQvDlbWUkfsmrKeeclGbL2ehwxEATrrdtWNhY=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-video@0.8.0/dist/css/splide-extension-video.min.css" integrity="sha256-uJvNKReeecfthkBhNDLky4FXv742qoe4BgE9icJOePg=" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-intersection@0.2.0/dist/js/splide-extension-intersection.min.js" integrity="sha256-JKADUEtliYhbM/9Tqt7qaeQb7T2XmLEKqJ068n6tcq0=" crossorigin="anonymous"></script>
+  </head>
+  <body
+    class="antialiased"
+  >
+      <div class="py-8 mb-8">
+  <div class="container mx-auto px-4 flex flex-col lg:flex-row justify-center lg:justify-between items-center font-rcp">
+    <div class="w-64">
+      <img src="/assets/images/logos/UHY-logo-green.svg" alt="UHY logo" height="55" width="163">
+    </div>
+  </div>
+</div>
+
+<div class="container mx-auto px-4 mb-16">
+  <h2 class="text-2xl text-independence font-rcp mb-8 border-b border-tint pb-4">
+  Navigation
+</h2>
+  <div class="flex flex-wrap -mx-4">
+    <div class="w-full md:w-1/3 px-4">
+      <ul>
+        <li class="mb-2"><a href="/">Base styles</a></li>
+        <li class="mb-2"><a href="/structural">Structural</a></li>
+        <li class="mb-2"><a href="/gadget">Gadget</a></li>
+      </ul>
+    </div>
+    <div class="w-full md:w-1/3 px-4">
+      <ul>
+        <li class="mb-2"><a href="/aspects">Content aspects</a></li>
+        <li class="mb-2"><a href="/blocks">Blocks</a></li>
+        <li class="mb-2"><a href="/paragraphs">Paragraphs</a></li>
+      </ul>
+    </div>
+    <div class="w-full md:w-1/3 px-4">
+      <ul>
+        <li class="mb-2"><a href="/kitchen-sink">Kitchen sink</a></li>
+        <li class="mb-2"><a href="/home">Home page</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+  <div class="container mx-auto px-4">
+  <h2 class="text-2xl text-independence font-rcp mb-8 border-b border-tint pb-4">
+  Pagination
+</h2>
+</div>
+<div class="container mx-auto px-4 mb-8">
+  <nav class="flex justify-center mt-11 mb-32">
+  <ul class="flex w-fit items-center h-8 bg-white border border-black-light rounded">
+    <li class="pl-4 pr-5 h-8 flex justify-center items-center">
+      <a href="#" class="text-sm font-light text-black-light">Previous</a>
+    </li>
+    <li class="bg-green-dark w-10 h-8 flex justify-center items-center">
+      <a href="#" class="text-sm font-bold text-white">1</a>
+    </li>
+    <li class="w-10 h-8 flex justify-center items-center border-r border-black-light">
+      <a href="#" class="text-sm font-light text-black-light">2</a>
+    </li>
+    <li class="w-10 h-8 flex justify-center items-center border-r border-black-light">
+      <a href="#" class="text-sm font-light text-black-light">3</a>
+    </li>
+    <li class="h-8 flex justify-center items-center px-4">
+      <a href="#" class="text-sm font-light text-black-light">Next</a>
+    </li>
+  </ul>
+</nav>
+</div>
+
+  <div class="container mx-auto px-4">
+  <h2 class="text-2xl text-independence font-rcp mb-8 border-b border-tint pb-4">
+  Accordion
+</h2>
+</div>
+<div class="container mx-auto px-4 mb-8">
+  <div class="container mx-auto skinny-container">
+    <div class="border-t border-t-black-light border-opacity-30">
+    <div x-data="{'open': false}" class="flex py-4 border-b border-black-light border-opacity-30">
+  <div class="ml-6">
+    <p @click="open = !open" class="font-semibold text-lg text-black-light select-none relative before:absolute before:top-1/2 before:-left-12 before:-translate-y-1/2 before:size-5 before:bg-chevron-down before:ml-5 before:transition-transform cursor-pointer" :class="{'before:rotate-180':open}">Totam rem aperiam</p>
+    <div x-show="open" class="prose mt-5 max-w-none" x-cloak x-transition>
+      <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>
+        <ul>
+          <li>Dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</li>
+          <li>Invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua</li>
+          <li>At vero eos et accusam et justo duo dolores et ea rebum</li>
+          <li>Stet clita kasd gubergren, no sea takimata sanctus est</li>
+        </ul>
+    </div>
+  </div>
+</div>
+      <div x-data="{'open': false}" class="flex py-4 border-b border-black-light border-opacity-30">
+  <div class="ml-6">
+    <p @click="open = !open" class="font-semibold text-lg text-black-light select-none relative before:absolute before:top-1/2 before:-left-12 before:-translate-y-1/2 before:size-5 before:bg-chevron-down before:ml-5 before:transition-transform cursor-pointer" :class="{'before:rotate-180':open}">At vero eos et accusam</p>
+    <div x-show="open" class="prose mt-5 max-w-none" x-cloak x-transition>
+      <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>
+        <ul>
+          <li>Dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</li>
+          <li>Invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua</li>
+          <li>At vero eos et accusam et justo duo dolores et ea rebum</li>
+          <li>Stet clita kasd gubergren, no sea takimata sanctus est</li>
+        </ul>
+    </div>
+  </div>
+</div>
+      <div x-data="{'open': false}" class="flex py-4 border-b border-black-light border-opacity-30">
+  <div class="ml-6">
+    <p @click="open = !open" class="font-semibold text-lg text-black-light select-none relative before:absolute before:top-1/2 before:-left-12 before:-translate-y-1/2 before:size-5 before:bg-chevron-down before:ml-5 before:transition-transform cursor-pointer" :class="{'before:rotate-180':open}">Aliquyam erat sed diam voluptua</p>
+    <div x-show="open" class="prose mt-5 max-w-none" x-cloak x-transition>
+      <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>
+        <ul>
+          <li>Dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</li>
+          <li>Invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua</li>
+          <li>At vero eos et accusam et justo duo dolores et ea rebum</li>
+          <li>Stet clita kasd gubergren, no sea takimata sanctus est</li>
+        </ul>
+    </div>
+  </div>
+</div>
+      <div x-data="{'open': false}" class="flex py-4 border-b border-black-light border-opacity-30">
+  <div class="ml-6">
+    <p @click="open = !open" class="font-semibold text-lg text-black-light select-none relative before:absolute before:top-1/2 before:-left-12 before:-translate-y-1/2 before:size-5 before:bg-chevron-down before:ml-5 before:transition-transform cursor-pointer" :class="{'before:rotate-180':open}">Duo dolores et ea rebum</p>
+    <div x-show="open" class="prose mt-5 max-w-none" x-cloak x-transition>
+      <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>
+        <ul>
+          <li>Dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</li>
+          <li>Invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua</li>
+          <li>At vero eos et accusam et justo duo dolores et ea rebum</li>
+          <li>Stet clita kasd gubergren, no sea takimata sanctus est</li>
+        </ul>
+    </div>
+  </div>
+</div>
+      <div x-data="{'open': false}" class="flex py-4 border-b border-black-light border-opacity-30">
+  <div class="ml-6">
+    <p @click="open = !open" class="font-semibold text-lg text-black-light select-none relative before:absolute before:top-1/2 before:-left-12 before:-translate-y-1/2 before:size-5 before:bg-chevron-down before:ml-5 before:transition-transform cursor-pointer" :class="{'before:rotate-180':open}">Duo dolores et ea rebum</p>
+    <div x-show="open" class="prose mt-5 max-w-none" x-cloak x-transition>
+      <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>
+        <ul>
+          <li>Dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</li>
+          <li>Invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua</li>
+          <li>At vero eos et accusam et justo duo dolores et ea rebum</li>
+          <li>Stet clita kasd gubergren, no sea takimata sanctus est</li>
+        </ul>
+    </div>
+  </div>
+</div>
+  </div>
+</div>
+</div>
+  <div class="container mx-auto px-4">
+  <h2 class="text-2xl text-independence font-rcp mb-8 border-b border-tint pb-4">
+  Slider
+</h2>
+</div>
+<div class="container mx-auto px-4 mb-8">
+  <section class="block--latest-insights container mx-auto py-28 xl:py-36" x-data="{intersected: false}">
+  <div class="flex max-md:flex-col justify-between mb-10">
+    <h2 class="text-3xl max-md:mb-10" id="latest-insights-heading">Our latest insights</h2>
+    <a href="#" class="max-md:ml-auto text-black uppercase text-sm flex justify-center items-center w-fit relative after:ease-out after:left-0 after:duration-300 after:absolute after:-bottom-1.5 after:h-0.5 after:w-0 hover:after:bg-black hover:after:w-full after:transition-all"><span>More insights</span><img src="/assets/images/icons/arrow-right-black.svg" alt="" class="text-black ml-3 w-4 h-3" width="15" height="12"></a>
+  </div>
+  <div class="latest-insights splide" x-intersect.threshold.70="intersected = true" role="group" aria-labelledby="latest-insights-heading">
+    <div class="splide__track pb-10 slider-unviewed" :class="{'in-view': intersected}">
+      <ul class="splide__list">
+        <li class="splide__slide">
+  <a href="#" class="teaser block group relative transition ease-out duration-300 overflow-hidden" :class="{'translate-y-0': intersected}">
+    <span class="absolute bg-green-mid text-white p-3 top-0 left-0 z-20">Article</span>
+    <img src="/assets/images/misc/home/banner-image-2.png" alt="" class="absolute top-0 left-0 w-full h-full object-cover scale-100 transition duration-300 ease-out group-hover:scale-105">
+    <article class="h-96 md:h-[480px] lg:h-[620px] xl:h-[578px] flex flex-col bg-black px-5 pb-6 transition-all ease-out duration-300 overflow-hidden">
+      <div class="overlay opacity-60 group-hover:opacity-100 absolute top-0 left-0 w-full h-full from-black to-black-faded bg-gradient-to-t z-10 pointer-events-none transition-all ease-out duration-300"></div>
+      <h3 class="text-xl text-white group-hover:underline mb-10 line-clamp-3 mt-auto relative z-20">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam...</h3>
+      <div class="text-white uppercase text-sm flex justify-center z-20 items-center w-fit relative after:ease-out after:left-0 after:duration-300 after:absolute after:-bottom-1.5 after:h-0.5 after:w-0 group-hover:after:bg-white group-hover:after:w-full after:transition-all"><span>Read more</span><img src="/assets/images/icons/arrow-right-white.svg" alt="" class="text-white ml-3 w-4 h-3" width="15" height="12"></div>
+    </article>
+</a>
+</li>
+        <li class="splide__slide">
+  <a href="#" class="teaser block group relative transition ease-out duration-300 overflow-hidden" :class="{'translate-y-0': intersected}">
+    <span class="absolute bg-green-mid text-white p-3 top-0 left-0 z-20">Article</span>
+    <img src="/assets/images/misc/home/article-2.png" alt="" class="absolute top-0 left-0 w-full h-full object-cover scale-100 transition duration-300 ease-out group-hover:scale-105">
+    <article class="h-96 md:h-[480px] lg:h-[620px] xl:h-[578px] flex flex-col bg-black px-5 pb-6 transition-all ease-out duration-300 overflow-hidden">
+      <div class="overlay opacity-60 group-hover:opacity-100 absolute top-0 left-0 w-full h-full from-black to-black-faded bg-gradient-to-t z-10 pointer-events-none transition-all ease-out duration-300"></div>
+      <h3 class="text-xl text-white group-hover:underline mb-10 line-clamp-3 mt-auto relative z-20">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam...</h3>
+      <div class="text-white uppercase text-sm flex justify-center z-20 items-center w-fit relative after:ease-out after:left-0 after:duration-300 after:absolute after:-bottom-1.5 after:h-0.5 after:w-0 group-hover:after:bg-white group-hover:after:w-full after:transition-all"><span>Read more</span><img src="/assets/images/icons/arrow-right-white.svg" alt="" class="text-white ml-3 w-4 h-3" width="15" height="12"></div>
+    </article>
+</a>
+</li>
+        <li class="splide__slide">
+  <a href="#" class="teaser block group relative transition ease-out duration-300 overflow-hidden" :class="{'translate-y-0': intersected}">
+    <span class="absolute bg-green-mid text-white p-3 top-0 left-0 z-20">Article</span>
+    <img src="/assets/images/misc/home/default-card.png" alt="" class="absolute top-0 left-0 w-full h-full object-cover scale-100 transition duration-300 ease-out group-hover:scale-105">
+    <article class="h-96 md:h-[480px] lg:h-[620px] xl:h-[578px] flex flex-col bg-black px-5 pb-6 transition-all ease-out duration-300 overflow-hidden">
+      <div class="overlay opacity-60 group-hover:opacity-100 absolute top-0 left-0 w-full h-full from-black to-black-faded bg-gradient-to-t z-10 pointer-events-none transition-all ease-out duration-300"></div>
+      <h3 class="text-xl text-white group-hover:underline mb-10 line-clamp-3 mt-auto relative z-20">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam...</h3>
+      <div class="text-white uppercase text-sm flex justify-center z-20 items-center w-fit relative after:ease-out after:left-0 after:duration-300 after:absolute after:-bottom-1.5 after:h-0.5 after:w-0 group-hover:after:bg-white group-hover:after:w-full after:transition-all"><span>Read more</span><img src="/assets/images/icons/arrow-right-white.svg" alt="" class="text-white ml-3 w-4 h-3" width="15" height="12"></div>
+    </article>
+</a>
+</li>
+        <li class="splide__slide">
+  <a href="#" class="teaser block group relative transition ease-out duration-300 overflow-hidden" :class="{'translate-y-0': intersected}">
+    <span class="absolute bg-green-mid text-white p-3 top-0 left-0 z-20">Article</span>
+    <img src="/assets/images/misc/home/banner-image-2.png" alt="" class="absolute top-0 left-0 w-full h-full object-cover scale-100 transition duration-300 ease-out group-hover:scale-105">
+    <article class="h-96 md:h-[480px] lg:h-[620px] xl:h-[578px] flex flex-col bg-black px-5 pb-6 transition-all ease-out duration-300 overflow-hidden">
+      <div class="overlay opacity-60 group-hover:opacity-100 absolute top-0 left-0 w-full h-full from-black to-black-faded bg-gradient-to-t z-10 pointer-events-none transition-all ease-out duration-300"></div>
+      <h3 class="text-xl text-white group-hover:underline mb-10 line-clamp-3 mt-auto relative z-20">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam...</h3>
+      <div class="text-white uppercase text-sm flex justify-center z-20 items-center w-fit relative after:ease-out after:left-0 after:duration-300 after:absolute after:-bottom-1.5 after:h-0.5 after:w-0 group-hover:after:bg-white group-hover:after:w-full after:transition-all"><span>Read more</span><img src="/assets/images/icons/arrow-right-white.svg" alt="" class="text-white ml-3 w-4 h-3" width="15" height="12"></div>
+    </article>
+</a>
+</li>
+        <li class="splide__slide">
+  <a href="#" class="teaser block group relative transition ease-out duration-300 overflow-hidden" :class="{'translate-y-0': intersected}">
+    <span class="absolute bg-green-mid text-white p-3 top-0 left-0 z-20">Article</span>
+    <img src="/assets/images/misc/home/article-2.png" alt="" class="absolute top-0 left-0 w-full h-full object-cover scale-100 transition duration-300 ease-out group-hover:scale-105">
+    <article class="h-96 md:h-[480px] lg:h-[620px] xl:h-[578px] flex flex-col bg-black px-5 pb-6 transition-all ease-out duration-300 overflow-hidden">
+      <div class="overlay opacity-60 group-hover:opacity-100 absolute top-0 left-0 w-full h-full from-black to-black-faded bg-gradient-to-t z-10 pointer-events-none transition-all ease-out duration-300"></div>
+      <h3 class="text-xl text-white group-hover:underline mb-10 line-clamp-3 mt-auto relative z-20">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam...</h3>
+      <div class="text-white uppercase text-sm flex justify-center z-20 items-center w-fit relative after:ease-out after:left-0 after:duration-300 after:absolute after:-bottom-1.5 after:h-0.5 after:w-0 group-hover:after:bg-white group-hover:after:w-full after:transition-all"><span>Read more</span><img src="/assets/images/icons/arrow-right-white.svg" alt="" class="text-white ml-3 w-4 h-3" width="15" height="12"></div>
+    </article>
+</a>
+</li>
+        <li class="splide__slide">
+  <a href="#" class="teaser block group relative transition ease-out duration-300 overflow-hidden" :class="{'translate-y-0': intersected}">
+    <span class="absolute bg-green-mid text-white p-3 top-0 left-0 z-20">Article</span>
+    <img src="/assets/images/misc/home/default-card.png" alt="" class="absolute top-0 left-0 w-full h-full object-cover scale-100 transition duration-300 ease-out group-hover:scale-105">
+    <article class="h-96 md:h-[480px] lg:h-[620px] xl:h-[578px] flex flex-col bg-black px-5 pb-6 transition-all ease-out duration-300 overflow-hidden">
+      <div class="overlay opacity-60 group-hover:opacity-100 absolute top-0 left-0 w-full h-full from-black to-black-faded bg-gradient-to-t z-10 pointer-events-none transition-all ease-out duration-300"></div>
+      <h3 class="text-xl text-white group-hover:underline mb-10 line-clamp-3 mt-auto relative z-20">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam...</h3>
+      <div class="text-white uppercase text-sm flex justify-center z-20 items-center w-fit relative after:ease-out after:left-0 after:duration-300 after:absolute after:-bottom-1.5 after:h-0.5 after:w-0 group-hover:after:bg-white group-hover:after:w-full after:transition-all"><span>Read more</span><img src="/assets/images/icons/arrow-right-white.svg" alt="" class="text-white ml-3 w-4 h-3" width="15" height="12"></div>
+    </article>
+</a>
+</li>
+        <li class="splide__slide">
+  <a href="#" class="teaser block group relative transition ease-out duration-300 overflow-hidden" :class="{'translate-y-0': intersected}">
+    <span class="absolute bg-green-mid text-white p-3 top-0 left-0 z-20">Article</span>
+    <img src="/assets/images/misc/home/banner-image-2.png" alt="" class="absolute top-0 left-0 w-full h-full object-cover scale-100 transition duration-300 ease-out group-hover:scale-105">
+    <article class="h-96 md:h-[480px] lg:h-[620px] xl:h-[578px] flex flex-col bg-black px-5 pb-6 transition-all ease-out duration-300 overflow-hidden">
+      <div class="overlay opacity-60 group-hover:opacity-100 absolute top-0 left-0 w-full h-full from-black to-black-faded bg-gradient-to-t z-10 pointer-events-none transition-all ease-out duration-300"></div>
+      <h3 class="text-xl text-white group-hover:underline mb-10 line-clamp-3 mt-auto relative z-20">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam...</h3>
+      <div class="text-white uppercase text-sm flex justify-center z-20 items-center w-fit relative after:ease-out after:left-0 after:duration-300 after:absolute after:-bottom-1.5 after:h-0.5 after:w-0 group-hover:after:bg-white group-hover:after:w-full after:transition-all"><span>Read more</span><img src="/assets/images/icons/arrow-right-white.svg" alt="" class="text-white ml-3 w-4 h-3" width="15" height="12"></div>
+    </article>
+</a>
+</li>
+        <li class="splide__slide">
+  <a href="#" class="teaser block group relative transition ease-out duration-300 overflow-hidden" :class="{'translate-y-0': intersected}">
+    <span class="absolute bg-green-mid text-white p-3 top-0 left-0 z-20">Article</span>
+    <img src="/assets/images/misc/home/article-2.png" alt="" class="absolute top-0 left-0 w-full h-full object-cover scale-100 transition duration-300 ease-out group-hover:scale-105">
+    <article class="h-96 md:h-[480px] lg:h-[620px] xl:h-[578px] flex flex-col bg-black px-5 pb-6 transition-all ease-out duration-300 overflow-hidden">
+      <div class="overlay opacity-60 group-hover:opacity-100 absolute top-0 left-0 w-full h-full from-black to-black-faded bg-gradient-to-t z-10 pointer-events-none transition-all ease-out duration-300"></div>
+      <h3 class="text-xl text-white group-hover:underline mb-10 line-clamp-3 mt-auto relative z-20">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam...</h3>
+      <div class="text-white uppercase text-sm flex justify-center z-20 items-center w-fit relative after:ease-out after:left-0 after:duration-300 after:absolute after:-bottom-1.5 after:h-0.5 after:w-0 group-hover:after:bg-white group-hover:after:w-full after:transition-all"><span>Read more</span><img src="/assets/images/icons/arrow-right-white.svg" alt="" class="text-white ml-3 w-4 h-3" width="15" height="12"></div>
+    </article>
+</a>
+</li>
+        <li class="splide__slide">
+  <a href="#" class="teaser block group relative transition ease-out duration-300 overflow-hidden" :class="{'translate-y-0': intersected}">
+    <span class="absolute bg-green-mid text-white p-3 top-0 left-0 z-20">Article</span>
+    <img src="/assets/images/misc/home/default-card.png" alt="" class="absolute top-0 left-0 w-full h-full object-cover scale-100 transition duration-300 ease-out group-hover:scale-105">
+    <article class="h-96 md:h-[480px] lg:h-[620px] xl:h-[578px] flex flex-col bg-black px-5 pb-6 transition-all ease-out duration-300 overflow-hidden">
+      <div class="overlay opacity-60 group-hover:opacity-100 absolute top-0 left-0 w-full h-full from-black to-black-faded bg-gradient-to-t z-10 pointer-events-none transition-all ease-out duration-300"></div>
+      <h3 class="text-xl text-white group-hover:underline mb-10 line-clamp-3 mt-auto relative z-20">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam...</h3>
+      <div class="text-white uppercase text-sm flex justify-center z-20 items-center w-fit relative after:ease-out after:left-0 after:duration-300 after:absolute after:-bottom-1.5 after:h-0.5 after:w-0 group-hover:after:bg-white group-hover:after:w-full after:transition-all"><span>Read more</span><img src="/assets/images/icons/arrow-right-white.svg" alt="" class="text-white ml-3 w-4 h-3" width="15" height="12"></div>
+    </article>
+</a>
+</li>
+      </ul>
+    </div>
+  </div>
+</section>
+</div>
+
+    <script defer src="/assets/build/js/main.js?id=395eb8038faf3f736ed6ae1eba25886a"></script>
+  </body>
+</html>
